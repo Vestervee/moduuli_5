@@ -1,14 +1,9 @@
-#moduuli 5 tehtävä 1
-import random
-nopat = []
-noppien_määrä = int(input("Monta noppaa heitetään? "))
-toisto = 0
-while toisto < noppien_määrä:
-  noppa = random.randint(1, 6)
-  nopat.append(noppa)
-  print(f"Nopasta tuli: {noppa}")
-  toisto += 1
-noppa_summa = 0
-for noppa in nopat:
-  noppa_summa += noppa
-print((f"Noppien summa on: {noppa_summa}"))
+#moduuli 5 tehtävä 2
+numerot = []
+numero = input("Syötä luku tai paina enter jatkaaksesi: ")
+while numero != "":
+  numerot.append(float(numero))
+  numero = input("Syötä seuraava luku tai paina enter jatkaaksesi: ")
+lajiteltu_numerot = sorted(numerot)
+pienimmät_numerot = lajiteltu_numerot[:5]
+print(f"Pienimmät numerot ovat: {pienimmät_numerot}")
