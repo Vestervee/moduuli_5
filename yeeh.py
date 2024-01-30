@@ -1,3 +1,4 @@
+#moduuli 5 tehtävä 1
 import random
 nopat = []
 noppien_määrä = int(input("Monta noppaa heitetään? "))
