@@ -1,0 +1,13 @@
+#moduuli 5 tehtävä 3
+numero = int(input("Syötä kokonaisluku: "))
+def alkuluku(numero):
+    if numero<=1:
+        return False
+    for i in range(2,int(numero**0.5)+1):
+        if numero % i == 0:
+            return False
+    return True
+if alkuluku(numero):
+    print("numero on alkuluku")
+else:
+    print("numero ei ole alkuluku")
