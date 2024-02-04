@@ -1,0 +1,8 @@
+#moduuli 5 tehtävä 4
+kaupungit = []
+lista = [1, 2, 3, 4, 5]
+for n in lista:
+   kaupunki = input("Syötä kaupungin nimi: ")
+   kaupungit.append(kaupunki)
+for n in kaupungit:
+    print(n)
